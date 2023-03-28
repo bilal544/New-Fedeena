@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title=========================================== -->
+    <title>School Management Software</title>
+    <link rel="icon" href="./Assets/Images/facebook.png" type="image/x-icon" />
+    <!-- Bootstrap css files ============================================-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icons + fontawesome + google icons======================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script src="https://kit.fontawesome.com/c7dabd0806.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <!----------------owl-carousel-files==========================================-->
+    <link rel="stylesheet" href="./Assets/animation css/animate.css" />
+    <link rel="stylesheet" href="./Assets/animation css/owl.carousel.css" />
+    <link rel="stylesheet" href="./Assets/animation css/owl.theme.green.css" />
+    <!-- Own styling linking===================================== -->
+    <link rel="stylesheet" href="./Assets/Css/style.css" />
+    <!----------own scrolll animation css cdn========================================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!--------on scroll javascript animation cdn============================-->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body onload="myfunction()">
+    <!------preloader===========================================-->
+  <div id="loading"></div>
+    <!-- header for navbar=====================================  -->
+    <header>
+      <nav class="navbar navbar-expand-lg shadow sticky-top bg-white">
+        <div class="container">
+          <a class="navbar-brand" href="Index.html">
+            <img
+              src="./Assets/Images/logo.webp"
+              alt=""
+              style="resize: none; width: 78px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Product
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Feature-Tour.html" target="_blank">Feature Tour</a></li>
+                  <li><a class="dropdown-item" href="#">Fedena Learn</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Mibile App</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Multi School</a></li>
+                  <li><a class="dropdown-item" href="#">Student Information System</a></li>
+                  <li><a class="dropdown-item" href="#">Custom ERP</a></li>
+                  <li><a class="dropdown-item" href="#">Integration</a></li>
+                  <li><a class="dropdown-item" href="#">101 Reasons</a></li>
+                  <li><a class="dropdown-item" href="#">Fedena Difference</a></li>
+                  <li><a class="dropdown-item" href="#">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Partner
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <!-- btn section===========-->
+              <div class="btn-section ms-lg-3 ms-0">
+                <button type="button" class="bg-white border1 rounded-1">
+                  <a href="#" class="text-decoration-none"> Try For Free </a>
+                </button>
+                <!-- btn-2====================== -->
+                <button type="button" class="border2 rounded-1 mt-lg-0 mt-2">
+                  <a href="#" class="text-decoration-none">
+                    Request Live Demo
+                  </a>
+                </button>
+              </div>
+              <!----=========================phone icon=====================================-->
+              <div
+                class="phone-icon ms-2 d-lg-block d-none"
+              >
+                <a href="#" class="text-dark">
+                  <img src="./Assets/Images/call-icon.png" alt="" style="height: 40px;" title="+91-8047-0918-07">
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--------------------------------main banner================================================================-->
+      <div class="main-banner">
+        <div class="container pt-5 pb-5">
+          <div class="row justify-content-evenly align-items-center">
+            <div class="col-lg-5 col-md-8 text-lg-start text-center">
+              <!-- bg-red-for-all-in-one -->
+              <div
+                class="bg-red-for-all-in-one col-lg-3 col-md-4 col-5 rounded-2 text-center mx-lg-0 mx-auto"
+              >
+                <h5>All In One</h5>
+              </div>
+              <br />
+              <!-- headings============================ -->
+              <strong class="fw-bolder h1 banner-heading">
+                College and School Management Software
+              </strong>
+              <!----para ============================-->
+              <p class="mt-3 h5 para-area-1">
+                <b class="fw-bolder">
+                  Automate Institute Daily Operations, Generate Insightful
+                  Reports, Make Better & Faster Decisions.
+                </b>
+                Fedena is an online school management system software that
+                simplifies the institute's academic & administrative process
+                effortlessly.
+              </p>
+              <!-- btn section===========-->
+              <div class="btn-section mt-4">
+                <button type="button" class="bg-white border-1 rounded-1">
+                  <a href="#" class="text-decoration-none h5"> Request Demo </a>
+                </button>
+                <!-- btn-2====================== -->
+                <button
+                  type="button"
+                  class="border-2 rounded-1 ms-0 ms-lg-3 mt-lg-0 mt-2"
+                >
+                  <a href="#" class="text-decoration-none h5">
+                    Pricing & Plans
+                  </a>
+                </button>
+              </div>
+            </div>
+            <!-----right alignment of images===============================================-->
+            <div class="col-lg-7 d-lg-block d-none">
+              <div class="images-area">
+                <figure class="position-1">
+                  <img
+                    src="Assets/Images/frame-1e3031d4bfdbaed54c9c632680218a4cb83aa748e2c5c41baf7fcafbf8c7da63.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </figure>
+                <figure class="position-2">
+                  <img
+                    src="./Assets/Images/attendance-2a4656cf8677a4c48b635d5bca05ced48beb622d90a1bccde40d4ec1073b32c1.svg"
+                    alt=""
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+      <!----------back to top button===================================================-->
+      <button
+      type="button"
+      class="btn btn-floating btn-sm"
+      id="btn-back-to-top" title="Back To Top"
+    >
+      <i class="fas fa-angle-up text-white"></i>
+    </button>
+    <!------------------phone icon on scroll btn====================================================-->
+    <button type="button"
+    class="btn btn-floating btn-sm border"
+    id="phone-icon" title="+91-8047-0918-07">
+     <i class="fas fa-phone text-white"></i>
+    </button>
+     <!------------------email icon on scroll btn =============================================-->
+     <button type="button"
+     class="btn btn-floating btn-primary btn-sm border"
+     id="email-icon" title="Email Us">
+      <i class="bi bi-envelope-open text-white"></i>
+     </button>
+    <!------main body 1st main section-===================================================================================-->
+    <main>
+      <section class="bg-violet pt-4 pb-4">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <!------building college================================================-->
+            <div
+              class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center"
+            >
+              <figure>
+                <img
+                  src="./Assets/Images/university.png"
+                  alt=""
+                  style="width: 65px"
+                  class="icon-1 mx-auto"
+                />
+              </figure>
+              <figcaption class="ms-4 mt-lg-2 mt-0 text-white">
+                <b class="h4 fw-bolder numbers" data-target="40000"> 0 + </b>
+                <p>Schools& Colleges</p>
+              </figcaption>
+            </div>
+            <!------Earth================================================-->
+            <div
+              class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center"
+            >
+              <figure>
+                <img
+                  src="./Assets/Images/planet-earth.png"
+                  alt=""
+                  style="width: 65px"
+                  class="icon-1"
+                />
+              </figure>
+              <figcaption class="ms-4 mt-lg-0 mt-0 text-white">
+                <b class="h4 fw-bolder  numbers" data-target="200"> 0 + </b>
+                <p class="h5">Countries</p>
+              </figcaption>
+            </div>
+            <!------Language================================================-->
+            <div
+              class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center"
+            >
+              <figure>
+                <img
+                  src="./Assets/Images/translation.png"
+                  alt=""
+                  style="width: 65px"
+                  class="icon-1"
+                />
+              </figure>
+              <figcaption class="ms-4 mt-lg-0 mt-0 text-white">
+                <b class="h4 fw-bolder numbers" data-target="20"> 0 + </b>
+                <p class="h5">Languages</p>
+              </figcaption>
+            </div>
+            <!---------------btn for Buy Now================================================-->
+            <div class="col-lg-3 col-md-6 text-center mt-md-0 mt-3">
+              <button type="submit" class="mx-auto btn-buy-now">
+                <a
+                  href="#"
+                  type="button"
+                  class="text-decoration-none text-center"
+                >
+                  Buy Now
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!------------------main body 2nd main section============================================================-->
+    <main>
+      <section class="my-5 ">
+        <!-- tittle Why Fedena School Management Software? -->
+        <div class="tittle text-center" >
+          <strong class="h2 fw-bolder" data-aos="zoom-in">
+            Why Fedena School Management Software?
+          </strong>
+          <!--------------rightalignment + left alignment===================================================-->
+          <div class="container mt-lg-5 mt-4">
+            <div class="row justify-content-between align-items-center">
+              <!-------------showing image on small screen=====================================-->
+              <div class="col-md-5 d-lg-none d-md-block" data-aos="zoom-in" data-aos-delay="1500">
+                <figure>
+                  <img
+                    src="./Assets/Images/computer.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </figure>
+              </div>
+              <div class="col-lg-7 col-md-8">
+                <p class="text-muted h5 text-start" style="line-height: 1.3" data-aos="fade-right" data-aos-delay="200">
+                  Fedena is a multipurpose school management system which aids
+                  in automating the school’s daily operations hassle-free and
+                  provide insightful reports and 360-degree tracking so that the
+                  stakeholders can make better and faster decisions to escalate
+                  the productivity of their institution.
+                </p>
+                <!------------2nd para==============================================-->
+                <p class="text-muted text-start h5" style="line-height: 1.3" data-aos="fade-right" data-aos-delay="200">
+                  From organizing the parent-teacher meeting to online fees
+                  collection and examination management, to bulk data management
+                  Fedena school software handles every process smoothly and
+                  efficiently. It is a fully web-based school ERP software
+                  provides 100+ excellent modules, 24/7 customer support, and
+                  data security.
+                </p>
+                <!------------3rd para==============================================-->
+                <p class="text-muted text-start h4" style="line-height: 1.3" data-aos="fade-right" data-aos-delay="200">
+                  Additionally, Fedena is suitable for types of education boards
+                  such as CBSE, ICSE, Regional State Board, International
+                  Baccalaureate (IB), and more.
+                </p>
+              </div>
+              <!------------------right alignment image---=================================================-->
+              <div class="col-lg-5 col-md-4 d-lg-block d-none" data-aos="zoom-up" data-aos-delay="300">
+                <figure>
+                  <img
+                    src="./Assets/Images/computer.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- 3rd main section for card=============================================-->
+    <main>
+      <section class="bg-card pb-5">
+        <div class="container pt-5 ps-4 pe-4">
+          <div class="row justify-content-between">
+            <div class="col-lg-6 col-md-4" data-aos-delay="200" data-aos="zoom-in">
+              <b class="h2 text-danger fw-bold"> Modules </b>
+              <span class="h2 text-white fw-bold">
+                to Automate School Management
+              </span>
+              <br />
+              <br />
+              <br />
+              <p class="text-white h4 fw-bold">
+                Single ERP Platform for All Your Education Need
+              </p>
+            </div>
+            <!----card-1========================================-->
+            <div class="col-lg-3 col-md-4 mb-lg-0 mb-2" data-aos-delay="200" data-aos="fade-up">
+              <div class="bg-white rounded-4 pt-3 pb-3">
+                <!----icon=====================================-->
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                  <figure>
+                    <img src="./Assets/Images/icon1st.png" alt="" />
+                  </figure>
+                  <!--------fig captions=======================================-->
+                  <figcaption class="mb-2">
+                    <b class="tittle h5 fw-bold text-center">Exam & Gradebook</b>
+                  </figcaption>
+                    <p class="text text-muted text-center" style="font-size: 15px;">
+                      Automate exam process. Effortlessly conduct online
+                      examinations. Create a digital report card and automate
+                      grade calculation.
+                    </p>
+                    <!-----------learn more btn=============================-->
+                    <a href="#" type="button" class="text-decoration-none text-danger h5 fw-bold">
+                      Learn More 	&#8594
+                    </a>
+                </div>
+              </div>
+            </div>
+             <!----card-2========================================-->
+             <div class="col-lg-3 col-md-4" data-aos-delay="200" data-aos="zoom-in">
+              <div class="bg-white rounded-4 pt-3 pb-3">
+                <!----icon=====================================-->
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                  <figure>
+                    <img src="./Assets/Images/icon2nd.png" alt="" />
+                  </figure>
+                  <!--------fig captions=======================================-->
+                  <figcaption class="mb-2">
+                    <b class="tittle h5 fw-bold text-center">Student Admission</b>
+                  </figcaption>
+                    <p class="text text-muted text-center" style="font-size: 15px;">
+                      Track admission enquiries, 
+                      manage admission details digitally, 
+                      customize admission forms 
+                      & verify documents digitally.
+                    </p>
+                    <!-----------learn more btn=============================-->
+                    <a href="#" type="button" class="text-decoration-none text-danger h5 fw-bold">
+                      Learn More 	&#8594
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!------------------------2nd row===============================================================-->
+          <div class="row justify-content-center align-items-center mt-3">
+           <!----card-3========================================-->
+           <div class="col-lg-3 col-md-6 mb-lg-0 mb-2" data-aos-delay="200" data-aos="zoom-in">
+            <div class="bg-white rounded-4 pt-3 pb-3">
+              <!----icon=====================================-->
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <figure>
+                  <img src="./Assets/Images/icon3rd.png" alt="" />
+                </figure>
+                <!--------fig captions=======================================-->
+                <figcaption class="mb-2">
+                  <b class="tittle h5 fw-bold text-center">Student Admission</b>
+                </figcaption>
+                  <p class="text text-muted text-center" style="font-size: 15px;">
+                    Track admission enquiries, 
+                    manage admission details digitally, 
+                    customize admission forms 
+                    & verify documents digitally.
+                  </p>
+                  <!-----------learn more btn=============================-->
+                  <a href="#" type="button" class="text-decoration-none text-danger h5 fw-bold">
+                    Learn More 	&#8594
+                  </a>
+              </div>
+            </div>
+          </div>
+            <!----card-4========================================-->
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-2" data-aos-delay="200" data-aos="zoom-in">
+              <div class="bg-white rounded-4 pt-4 pb-4">
+                <!----icon=====================================-->
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                  <figure>
+                    <img src="./Assets/Images/icon4th.png" alt="" />
+                  </figure>
+                  <!--------fig captions=======================================-->
+                  <figcaption class="mb-2">
+                    <b class="tittle h5 fw-bold text-center">Student Admission</b>
+                  </figcaption>
+                    <p class="text text-muted text-center" style="font-size: 15px;">
+                      Track admission enquiries, 
+                      manage admission details digitally, 
+                      customize admission forms 
+                      & verify documents digitally.
+                    </p>
+                    <!-----------learn more btn=============================-->
+                    <a href="#" type="button" class="text-decoration-none text-danger h5 fw-bold">
+                      Learn More 	&#8594
+                    </a>
+                </div>
+              </div>
+            </div>
+             <!----card-5========================================-->
+             <div class="col-lg-3 col-md-6 mb-lg-0 mb-2" data-aos-delay="200" data-aos="zoom-in">
+              <div class="bg-white rounded-4 pt-4 pb-4">
+                <!----icon=====================================-->
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                  <figure>
+                    <img src="./Assets/Images/icon5th.png" alt="" />
+                  </figure>
+                  <!--------fig captions=======================================-->
+                  <figcaption class="mb-2">
+                    <b class="tittle h5 fw-bold text-center">Student Admission</b>
+                  </figcaption>
+                    <p class="text text-muted text-center" style="font-size: 15px;">
+                      Track admission enquiries, 
+                      manage admission details digitally, 
+                      customize admission forms 
+                      & verify documents digitally.
+                    </p>
+                    <!-----------learn more btn=============================-->
+                    <a href="#" type="button" class="text-decoration-none text-danger h5 fw-bold">
+                      Learn More 	&#8594
+                    </a>
+                </div>
+              </div>
+            </div>
+             <!----card-6========================================-->
+             <div class="col-lg-3 col-md-6 mb-lg-0 mb-2" data-aos-delay="200" data-aos="zoom-in">
+              <div class="bg-white rounded-4 pt-3 pb-3">
+                <!----icon=====================================-->
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                  <figure>
+                    <img src="./Assets/Images/icon6th.png" alt="" />
+                  </figure>
+                  <!--------fig captions=======================================-->
+                  <figcaption class="mb-2">
+                    <b class="tittle h5 fw-bold text-center">Student Admission</b>
+                  </figcaption>
+                    <p class="text text-muted text-center" style="font-size: 15px;">
+                      Track admission enquiries, 
+                      manage admission details digitally, 
+                      customize admission forms 
+                      & verify documents digitally.
+                    </p>
+                    <!-----------learn more btn=============================-->
+                    <a href="#" type="button" class="text-decoration-none text-danger h5 fw-bold">
+                      Learn More 	&#8594
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------+50 other awesome modules fedena  ERP software-->
+          <div class="plus-fifty d-flex flex-column justify-content-center mt-4 text-lg-start text-center ms-lg-5 ps-lg-5" data-aos-delay="200" data-aos="zoom-in">
+            <b class="h1 text-white fw-bold">
+              +50
+            </b>
+          <p class="text-white h3 ">
+            other awesome modules in Fedena School ERP Software
+          </p>
+          <!----------------- see all features===============================-->
+          <div>
+          <button type="submit" class="btn-buy-now">
+            <a
+              href="#"
+              type="button"
+              class="text-decoration-none text-lg-start text-center"
+            >
+              See All Features
+            </a>
+          </button>
+          </div>
+          </div>
+      </section>
+    </main>
+    <!----------4th main section============================================----------------->
+    <main class="my-5">
+      <section>
+        <!-----------tittle-4th====================================================-->
+        <div class="text-center h2 fw-bold" data-aos-delay="200" data-aos="fade-up">
+          Perfect School Management System to Meet Your Institution Needs
+        </div>
+        <!--------description-area========================================================-->
+        <div class="container mt-4">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-4 col-md-4" data-aos-delay="200" data-aos="fade-right">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+               <figure>
+                <img src="./Assets/Images/icon7th.png" alt="">
+               </figure>
+               <figcaption>
+                <b class="h5 fw-bold">
+                  Simple & Easy to use for Teachers
+                </b>
+               </figcaption>
+               <p class="text-muted h5 text-center mt-2 col-lg-9">
+                Designed to engage teachers and parents. No expertise is required to quickly accomplish a task.
+               </p>
+              </div>
+            </div>
+            <!------------------2nd description=============================================-->
+            <div class="col-lg-4 col-md-4" data-aos-delay="200" data-aos="zoom-in">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+               <figure>
+                <img src="./Assets/Images/icon8th.png" alt="">
+               </figure>
+               <figcaption>
+                <b class="h6 fw-bold ">
+                  Powerful features for your Institution
+                </b>
+               </figcaption>
+               <p class="text-muted col-lg-8 h5 text-center mt-2">
+                We provide everything you will ever need to run an education institution. No customization required
+               </p>
+              </div>
+            </div>
+             <!------------------3rd description=============================================-->
+             <div class="col-lg-4 col-md-4" data-aos-delay="200" data-aos="zoom-in">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+               <figure>
+                <img src="./Assets/Images/icon9th.png" alt="">
+               </figure>
+               <figcaption>
+                <b class="h5 fw-bold">
+                  Online & On-site Customer Support
+                </b>
+               </figcaption>
+               <p class="text-muted h5 text-center mt-2 col-lg-9">
+                Designed to engage teachers and parents. No expertise is required to quickly accomplish a task.
+               </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!---------------5th main section for mobile====================================================================-->
+    <main class="mt-5 bg-image-1">
+      <section>
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-5">
+            <figure>
+              <img src="./Assets/Images/mobile-1.png" alt="" class="img-fluid" data-aos-delay="200" data-aos="zoom-in">
+            </figure>
+            </div>
+            <!----right alignment text for mobile appp=================================================-->
+            <div class="col-lg-6 col-md-7" data-aos-delay="200" data-aos="fade-up">
+              <b class="h1 text-white fw-bold">
+                Fedena School Management Mobile App
+              </b>
+              <br>
+              <br>
+              <strong class="h3 fw-bold text-white">
+                To manage the institute’s daily operations at your fingertips
+              </strong>
+              <p class="fw-bold text-white mt-3" style="font-size: 19px;">
+                iOS & Android Apps In Your Brand for Parents, Teachers & Students
+              </p>
+              <p class="text-white h5" style="line-height: 1.3;">
+                You can now enjoy the benefit of having a 
+                dedicated school management mobile app in 
+                your institution’s name that will 
+                communicate with the school ERP 
+                and stay connected with everyone.
+              </p>
+              <!--------------------explore features==============================================-->
+              <button type="button" class="border-0 mt-3 explore-features rounded-1 mb-5 mb-lg-0">
+                <a href="#" class="text-decoration-none h5 fw-bold text-danger">
+                  Explore App Features
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!------main section-6th for dotted layer=======================================-->
+    <main>
+      <section class="dotted-layer">
+         <div class="container mt-5">
+          <div class="text-center" data-aos-delay="200" data-aos="zoom-in">
+            <b class="h3 fw-bold">
+              Various Integration Option to Enhance School Management Experience
+            </b>
+            <p class="h5 mt-3">
+              Fedena has every feature your 
+              institution will ever need
+              and offers upto 20 integrations 
+              that enhance the capability and 
+              functionality of the student management platform.
+            </p>
+          </div>
+         </div>
+         <!------------------biometric section==========================-->
+         <div class="container">
+          <div class="row justify-content-between align-items-center">
+         <div class="col-lg-3 col-md-6 mt-5">
+          <div class="d-flex justify-content-center align-items-center" data-aos-delay="200" data-aos="fade-down">
+              <figure>
+                <img src="./Assets/Images/biometrics.png" alt="" style="height: 50px;">
+              </figure>
+              <span class="h5 ms-3 fw-bold">
+                Biometric
+              </span>
+            </div>
+          </div>
+          <!--------2nd location==================================================-->
+          <div class="col-lg-3 col-md-6 mt-5">
+            <div class="d-flex justify-content-center align-items-center" data-aos-delay="200" data-aos="fade-down">
+                <figure>
+                  <img src="./Assets/Images/placeholder.png" alt="" style="height: 50px;">
+                </figure>
+                <span class="h5 ms-3 fw-bold">
+                  Location
+                </span>
+              </div>
+            </div>
+            <!--------3rd paymentGateway==================================================-->
+          <div class="col-lg-3 col-md-6 mt-5">
+            <div class="d-flex justify-content-center align-items-center" data-aos-delay="200" data-aos="fade-down">
+                <figure>
+                  <img src="./Assets/Images/payment-gateway.png" alt="" style="height: 55px;">
+                </figure>
+                <span class="h5 ms-3 fw-bold">
+                  Payment Gateway
+                </span>
+              </div>
+            </div>
+            <!--------4th onlineClasses==================================================-->
+          <div class="col-lg-3 col-md-6 mt-5">
+            <div class="d-flex justify-content-center align-items-center" data-aos-delay="200" data-aos="fade-down">
+                <figure>
+                  <img src="./Assets/Images/online-classes.png" alt="" style="height: 65px;">
+                </figure>
+                <span class="h5 ms-3 fw-bold">
+                 Online Classes
+                </span>
+              </div>
+            </div>
+            </div>
+         </div>
+      </section>
+    </main>
+    <!----------7th main section for enhancements==================================================-->
+    <main>
+      <section class="bg-violet pt-5 pb-5">
+          <div class="container">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-lg-8 col-md-8 text-white" data-aos-delay="200" data-aos="fade-right">
+                <p class="h4">
+                <b >
+                  New! Fedena 4.0
+                </b>
+                  -6 New Features | 8 Enhancements
+                </p>
+              </div>
+              <!------btn=========================================-->
+              <div class="col-md-4 text-center" data-aos-delay="200" data-aos="fade-down">
+                <button type="submit" class="btn-buy-now ">
+                  <a
+                    href="#"
+                    type="button"
+                    class="text-decoration-none text-lg-start text-center"
+                  >
+                  Find Out More
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+    <!--------------8th main section for owl-carousel==================================-->
+    <main>
+      <section class="bg-light pt-5 pb-5">
+         <div class="container mt-2" data-aos-delay="200" data-aos="zoom-in">
+          <p class="text-center h2 fw-bold">
+            Why Institutes Love Fedena School ERP System?
+          </p>
+         </div>
+         <!---------carousel-section=========================================-->
+         <div class="container mt-5" data-aos-delay="200" data-aos="zoom-in">
+          <div class="col">
+            <div class="owl-carousel owl-theme owl-one">
+              <div class="item">
+                <div class="bg-white rounded-5 pt-3 w-50 mx-auto border media-500" >
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <!-------------testimonial image=====================================-->
+                    <figure >
+                      <img src="./Assets/Images/testimonial1.png" alt="testimonial1" style="height:100px">
+                    </figure>
+                    <figcaption class="col-lg-9">
+                      <p class="fs-6 text-center text-muted">
+                        This system is a great boon for us. 
+                        Thank you, Team Foradian, for making us successful! 
+                        In terms of administrative reforms,
+                        we were able to run in no time that
+                        in a brick-and-mortar way may have taken so many years.
+                        Fedena is a true disruption in the education world.
+                      </p>
+                    </figcaption>
+                    <br>
+                    <!--------------owner laksh career academy=====================================-->
+                   <p class="tittle text-danger fw-bold h5">
+                      Laksh Career Academy
+                   </p>
+                  </div>   
+                  <!-----------readfull case-study====================================================-->
+                  <div class="bg-danger text-white pt-2 pb-2 mt-4" style="border-radius: 0px 0px 20px 20px;">
+                    <p class="text-center h5">
+                       Readfull Case Study
+                    </p>
+                  </div>   
+                </div>        
+              </div>
+              <!----2nd item============================================-->
+              <div class="item">
+                <div class="bg-white rounded-5 pt-3 w-50 mx-auto border media-500">
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <!-------------testimonial image=====================================-->
+                    <figure>
+                      <img src="./Assets/Images/testimonial2.png" alt="testimonial1" style="height:100px" class="rounded-circle border-0">
+                    </figure>
+                    <figcaption class="col-lg-9">
+                      <p class="fs-6 text-center text-muted">
+                        Fedena is an all-in-one school management software.
+                         You have got everything in it. It manages attendance, 
+                         grade book, fees collection, and even HR.
+                      </p>
+                    </figcaption>
+                    <br>
+                    <!--------------owner laksh career academy=====================================-->
+                   <p class="tittle text-danger fw-bold h5 mb-5">
+                    Wellspring International School, Vietnam
+                   </p>
+                  </div>   
+                </div>        
+              </div>
+              <!-------------------3rd-item================================================-->
+              <div class="item">
+                <div class="bg-white rounded-5 pt-3 w-50 mx-auto border media-500">
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <!-------------testimonial image=====================================-->
+                    <figure >
+                      <img src="./Assets/Images/testimonial3.png" alt="testimonial1" style="height:100px" class="rounded-circle border-0">
+                    </figure>
+                    <figcaption class="col-lg-9">
+                      <p class="fs-6 text-center text-muted">
+                        Fedena has simplified our admission procedures, data management process, data 
+                        accessibility and communication between the stakeholders 
+                        thereby saving our valuable time as well as paper.
+                      </p>
+                    </figcaption>
+                    <br>
+                    <!--------------owner laksh career academy=====================================-->
+                   <p class="tittle text-danger fw-bold h5">
+                    Vidya Vikas Academy
+                   </p>
+                  </div>   
+                  <!-----------readfull case-study====================================================-->
+                  <div class="bg-danger text-white pt-2 pb-2 mt-4" style="border-radius: 0px 0px 20px 20px;">
+                    <p class="text-center h5">
+                       Readfull Case Study
+                    </p>
+                  </div>   
+                </div>        
+              </div>
+               <!-------------------4th-item================================================-->
+               <div class="item">
+                <div class="bg-white rounded-5 pt-3 w-50 mx-auto border media-500">
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <!-------------testimonial image=====================================-->
+                    <figure >
+                      <img src="./Assets/Images/testimonial5.png" alt="testimonial1" style="height:100px" class="rounded-circle border-0">
+                    </figure>
+                    <figcaption class="col-lg-9">
+                      <p class="fs-6 text-center text-muted">
+                        Help to maintain and use information about employees and students in a constructive way. Which makes any educational organization’s life easier.
+                      </p>
+                    </figcaption>
+                    <br>
+                    <!--------------owner laksh career academy=====================================-->
+                   <p class="tittle text-danger fw-bold h5 mb-5">
+                    Indian Institute of Logistics
+                   </p>
+                  </div>    
+                </div>        
+              </div>
+               <!-------------------5th-item================================================-->
+               <div class="item">
+                <div class="bg-white rounded-5 pt-3 w-50 mx-auto border media-500">
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <!-------------testimonial image=====================================-->
+                    <figure >
+                      <img src="./Assets/Images/testimonial4.png" alt="testimonial1" style="height:100px" class="rounded-circle border-0">
+                    </figure>
+                    <figcaption class="col-lg-9">
+                      <p class="fs-6 text-center text-muted">
+                        We don't have to care for our data, 
+                        and every single information is available 
+                        on our palm. Ease of use, Self-explanatory, 
+                        Best Move towards digital schools.
+                      </p>
+                    </figcaption>
+                    <br>
+                    <!--------------owner laksh career academy=====================================-->
+                   <p class="tittle text-danger fw-bold h5 mb-5">
+                    Ajit Vidya Mandir Shikshan Sansthan
+                   </p>
+                  </div>    
+                </div>        
+              </div>
+            </div>
+          </div>
+         </div>
+      </section>
+    </main>
+    <!-----------main section 9th loved by the pioneers in technology-->
+    <main>
+      <section style="background: #f8f3fa center no-repeat scroll;" class="pt-4">
+        <div class="container mt-5" >
+           <p class="h2 fw-bold text-center" data-aos-delay="200" data-aos="zoom-in">
+            Loved by the pioneers in technology
+           </p>
+           <div class="row justify-content-center align-items-center text-center mt-5" data-aos-delay="200" data-aos="zoom-in">
+            <div class="col-lg-3">
+              <figure class="mx-auto">
+                <img src="./Assets/Images/deloitte.png" alt="" style="mix-blend-mode: multiply;">
+              </figure>
+            </div>
+            <!------------2nd===========================-->
+            <div class="col-lg-3">
+              <figure>
+                <img src="./Assets/Images/cnbc.png" alt="" style="mix-blend-mode: multiply;">
+              </figure>
+            </div>
+             <!------------3rd===========================-->
+             <div class="col-lg-3">
+              <figure>
+                <img src="./Assets/Images/tr35.png" alt="" style="mix-blend-mode: multiply;">
+              </figure>
+            </div>
+             <!------------4th===========================-->
+             <div class="col-lg-3">
+              <figure>
+                <img src="./Assets/Images/cnbc.png" alt="" style="mix-blend-mode: multiply;">
+              </figure>
+            </div>
+           </div>
+        </div>
+      </section>
+    </main>
+    <!-- main section 10th for frequently asked questions -->
+    <main>
+      <section>
+        <div class="container mt-5">
+          <p class="text-center h2 fw-bold" data-aos-delay="700" data-aos="zoom-in">
+            FAQs on School Management Software
+          </p>
+          <!-------------2nd carousel==============================================================================-->
+          <div class="col owl-carousel owl-theme owl-2 mt-5">
+            <!--item1=====================================-->
+            <div class="item bg-light pt-4 pb-5 w-100 rounded-5 mx-auto" >
+               <b class="h3 fw-bold ms-lg-5 ms-2">
+                What is School Management Software?
+               </b>
+               <p class="ms-lg-5 ms-2 pt-4" style="font-size: 14px;">
+                <b class="h6 fw-bold">
+                  School management software 
+                </b>
+                is a platform 
+                that helps in automating and streamlining the institute’s 
+                daily academic and administrative activities in the most effective manner. 
+                At its core, school management software holds all 
+                institute data in one place and helps stakeholders in making a better decision.
+               </p>
+               <p class="ms-lg-5 ms-2" style="font-size: 14px;">
+                School Software helps in improving the productivity of their institution by
+                <b class="fw-bold">
+                  managing online admission, student attendance, online fee payment, timetable, parent communication, examination management, payroll, and
+                </b>
+                <a href="#" class="text-decoration-none text-danger fw-bold">
+                  Online Learning.
+                </a> The school ERP platform also offers many other 50+ features that help institutes in handling every operation smoothly and efficiently.
+               </p>
+            </div>
+             <!--item2nd=====================================-->
+             <div class="item bg-light pt-4 pb-5 w-100 rounded-5 mx-auto">
+              <b class="h3 fw-bold ms-lg-5 ms-2">
+                Why do institutes need School Software?
+              </b>
+              <p class="ms-lg-5 pt-4 ms-2" style="font-size: 14px;">
+                With School Software, institutes can avoid 
+                manual handling operations, eliminate the paperwork, 
+                reduce the possibility of errors in the process
+                 and minimize monotonous tasks of all departments. 
+                 By embracing the right school management 
+                system software the workload of employees can be 
+                reduced and various tasks can be 
+                completed without consuming too much time & effort.
+              </p>
+           </div>
+             <!--item3rd=====================================-->
+             <div class="item bg-light pt-4 pb-5 w-100 rounded-5 mx-auto">
+              <b class="h3 fw-bold ms-2 ms-lg-5">
+                Who uses School Software?
+              </b>
+              <p class="ms-lg-5 ms-2 pt-4" style="font-size: 14px;">
+                School ERP Platform is generally used by students,
+                 teachers, parents, admin and other staff members 
+                 in the institution. It reduces the burden of 
+                 repetitive tasks of employees, simplifies 
+                communication among all stakeholders and allows stakeholders 
+                to access up-to-date information from anywhere at any time on any device.
+              </p>
+           </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main-section 11th for get started for free tody with display flex -->
+     <main>
+      <section class="bg-violet pt-5 pb-5">
+        <div class="container">
+          <div class="d-flex justify-content-center align-items-center flex-column" data-aos-delay="200" data-aos="fade-up">
+            <strong class="h1 fw-bold text-white">
+              Get started For Free Today
+            </strong>
+            <p class="h6 col-lg-6 text-white text-center mt-3">
+              Join millions of users who have shared that Fedena provides 99% of
+              Customer Support Satisfaction.
+            </p>
+            <br>
+            <div class="d-flex justify-content-evenly align-items-center">
+              <div class="btn-section ms-lg-3 ms-0 text-center">
+                <!-- btn-1====================== -->
+                <button type="button" class="border2 rounded-1 mt-lg-0 mt-2" style="padding: 10px 20px;">
+                  <a href="#" class="text-decoration-none h5">
+                    Book A Demo
+                  </a>
+                </button>
+                 <!-- btn-2====================== -->
+                 <button type="button" class="border2 rounded-1 mt-lg-0 mt-2" style="padding: 10px 13px; background-color: transparent; border:1px solid #cc3122;">
+                  <a href="#" class="text-decoration-none h5 text-danger fw-bold">
+                    Get Started Free
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     </main>
+     <!-- main-section 12th for footer-->
+     <footer>
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <!----------logo====================================-->
+          <div class="col-lg-1 col-md-1 mb-lg-5 pb-lg-5 pb-0 mb-0">
+            <a href="#" class="logo">
+              <img src="./Assets/Images/logo.webp" alt="" style="width: 75px;">
+            </a>
+          </div>
+          <!----------------------product=========================================-->
+          <div class="col-lg-3 col-md-6 mt-5">
+            <ul class="list-unstyled">
+              <li>
+                <p class="text-muted h6 fw-bold">
+                 Product
+                </p>
+              </li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg">Features Tour</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg">Fedena Learn</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg">Features Tour</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg">Mobile App</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg">Multi School</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg">Student Information System</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg">Integration</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg">Partner Program</a></li>
+              
+            </ul>
+          </div>
+          <!----------------------Why Fedena=========================================-->
+          <div class="col-lg-3 col-md-6 mb-lg-4 mb-0">
+            <ul class="list-unstyled">
+              <li>
+                <p class="text-muted h6 fw-bold">
+                 Why Fedena?
+                </p>
+              </li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg">101 Reasons</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg">Fedena Differences</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg">Custom ERP</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg">Why School Management Software</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg">Multi School</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg">Our Customers</a></li>
+            </ul>
+          </div>
+          <!----------------------Help=========================================-->
+          <div class="col-lg-2 col-md-6 mb-lg-5 mb-0">
+            <ul class="list-unstyled">
+              <li>
+                <p class="text-muted h6 fw-bold">
+                 Help
+                </p>
+              </li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">Contact us</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">Support</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">Services</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">FAQ</a></li>
+              <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">API Playground</a></li>
+            </ul>
+          </div>
+          <!-----Foradian-technologies==============================================-->
+          <div class="col-lg-3 col-md-6 mt-lg-5 mt-0">
+            <p class="text-muted ">
+              Foradian Technologies,
+              #2569/665, J K Landmark,
+              27th Main Rd, Sector 1,
+              HSR Layout, Bengaluru,
+              Karnataka - 560102.
+            </p>
+            <ul class="list-unstyled">
+              <li class="text-dark fw-bold lh-lg">Contact us @
+                <br>
+                <a href="#" class="text-decoration-none text-dark fw-bold">
+                  +91- 8047 0918 07
+                </a>
+              </li>
+              <li class="text-dark fw-bold lh-lg">
+                 Download App
+                 <br>
+                <a href="#">
+                 <img src="./Assets/Images/apple-app-store-logo.jpg" alt="" style="width: 120px;">
+                </a>
+                <br>
+                <a href="#">
+                  <img src="./Assets/Images/download.png" alt="" style="width: 130px;">
+                 </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-------------copyright section===========================================================-->
+        <div class="row justify-content-between align-items-center mt-5">
+        <div class="col-lg-6 col-md-12">
+        <p class="text-muted text-lg-start text-center">
+          &#169;
+          2023 Foradian Technologies. All Rights Reserved.
+          <a href="#" class="text-dark text-decoration-none">
+            Terms
+          </a>
+          &
+          <a href="#" class="text-dark text-decoration-none">
+          Privacy
+          </a>
+        </p>
+      </div>
+      <!-------------social contact=====================================================-->
+      <div class="col-lg-6 col-md-12">
+         <ul class="list-unstyled d-flex justify-content-center ">
+          <li style="margin-right: 20px;"><a href="#" class="text-decoration-none text-dark">
+            <img src="./Assets/Images/facebook (1).png" alt="" style="width: 30px;">
+          </a></li>
+          <li style="margin-right: 20px;"><a href="#" class="text-decoration-none text-dark">
+            <img src="./Assets/Images/twitter-sign.png" alt="" style="width: 30px;">
+          </a></li>
+          <li style="margin-right: 20px;"><a href="#" class="text-decoration-none text-dark">
+            <img src="./Assets/Images/linkedin.png" alt="" style="width: 30px;">
+          </a></li>
+          <li><a href="#" class="text-decoration-none text-dark">
+            <img src="./Assets/Images/youtube-logo.png" alt="" style="width: 30px;">
+          </a></li>
+         </ul>
+      </div>
+    </div>
+      </div>
+     </footer>
+    <!-- js files cdn====================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Javascript/animation javascript/jquery.min.js"></script>
+    <script src="./Javascript/animation javascript/owl.carousel.min.js"></script>
+    <script src="./Javascript/My.js"></script>
+   
+  </body>
+</html>

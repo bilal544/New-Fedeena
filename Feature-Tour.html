@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title=========================================== -->
+    <title>School Management Software</title>
+    <link rel="icon" href="./Assets/Images/facebook.png" type="image/x-icon" />
+    <!-- Bootstrap css files ============================================-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icons + fontawesome + google icons======================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script src="https://kit.fontawesome.com/c7dabd0806.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <!----------------owl-carousel-files==========================================-->
+    <link rel="stylesheet" href="./Assets/animation css/animate.css" />
+    <link rel="stylesheet" href="./Assets/animation css/owl.carousel.css" />
+    <link rel="stylesheet" href="./Assets/animation css/owl.theme.green.css" />
+    <!-- Own styling linking===================================== -->
+    <link rel="stylesheet" href="./Assets/Css/style.css" />
+    <!----------own scrolll animation css cdn========================================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--------on scroll javascript animation cdn============================-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body onload="myfunction()">
+    <!------preloader===========================================-->
+  <div id="loading"></div>
+    <!-- header for navbar========================================= -->
+    <header>
+      <nav class="navbar navbar-expand-lg shadow sticky-top bg-white">
+        <div class="container">
+          <a class="navbar-brand" href="Index.html">
+            <img
+              src="./Assets/Images/logo.webp"
+              alt=""
+              style="resize: none; width: 78px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Product
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Feature-Tour.html"
+                      >Feature Tour</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Fedena Learn</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Mibile App</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Multi School</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Student Information System</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Custom ERP</a></li>
+                  <li><a class="dropdown-item" href="#">Integration</a></li>
+                  <li><a class="dropdown-item" href="#">101 Reasons</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Fedena Difference</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Partner
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <!-- btn section===========-->
+              <div class="btn-section ms-lg-3 ms-0">
+                <button type="button" class="bg-white border1 rounded-1">
+                  <a href="#" class="text-decoration-none"> Try For Free </a>
+                </button>
+                <!-- btn-2====================== -->
+                <button type="button" class="border2 rounded-1 mt-lg-0 mt-2">
+                  <a href="#" class="text-decoration-none">
+                    Request Live Demo
+                  </a>
+                </button>
+              </div>
+              <!----=========================phone icon=====================================-->
+              <div class="phone-icon ms-2 d-lg-block d-none">
+                <a href="#" class="text-dark">
+                  <img
+                    src="./Assets/Images/call-icon.png"
+                    alt=""
+                    style="height: 40px"
+                    title="+91-8047-0918-07"
+                  />
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!----------back to top button===================================================-->
+    <button
+      type="button"
+      class="btn btn-floating btn-sm"
+      id="btn-back-to-top" title="Back to Top"
+    >
+      <i class="fas fa-angle-up text-white"></i>
+    </button>
+    <!------------------phone icon on scroll btn====================================================-->
+    <button type="button"
+    class="btn btn-floating btn-sm border"
+    id="phone-icon" title="+91-8047-0918-07">
+     <i class="fas fa-phone text-white"></i>
+    </button>
+     <!------------------email icon on scroll btn =============================================-->
+     <button type="button"
+     class="btn btn-floating btn-primary btn-sm border"
+     id="email-icon" title="Email Us">
+      <i class="bi bi-envelope-open text-white"></i>
+     </button>
+    <!-- banner-area 1st -->
+    <main class="mt-5">
+      <section>
+        <!-- Ultimate school erp heading 1 -->
+        <div class="container">
+          <div class="text-center">
+            <p class="h1 fw-bold">
+              Ultimate School ERP Software for all kind of Institutes
+            </p>
+            <p class="text-muted h4 mt-3">
+              Fedena School ERP system has every feature you will ever need to
+              run your institution efficiently
+            </p>
+          </div>
+        </div>
+        <!-- right-alignment+left-alignment for heading 1 -->
+        <div class="container mt-5">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-7">
+              <!-- 1st para -->
+              <p class="text-muted">
+                School ERP Software is a platform which helps in managing the
+                day to day academic and administrative activities from a single
+                platform. Fedena provides user-friendly dashboards with login
+                access for teachers, non-teaching staff, students, parents, and
+                management personnel of your institution. The various modules
+                available in school ERP software automate daily operations of
+                your institution such as from students’ admission to generating
+                transfer certificates to digitizing the online learning
+                experience all can be managed effortlessly.
+              </p>
+              <!-- 2nd-para -->
+              <p class="text-muted">
+                Fedena School ERP has modules to manage Timetable, Attendance,
+                Online Class, Examinations, Gradebooks, Mobile Learning, Hostel,
+                Library, Transportation, School Calendar, Events, and many more.
+                It has a fully-fledged Human Resource module to manage the
+                payroll and employee pay slips. The Finance module helps you to
+                plan and allot different fee structures to students. Fedena
+                School ERP System is also an excellent collaboration tool using
+                its Task, Discussion, Poll, Blog, and Videoconference plugins.
+                There is an internal messaging system within Fedena, but you can
+                also integrate it with external communication tools like email
+                and texting. To find out more about the school ERP system,
+                scroll through the following descriptions, try the
+                <a href="#" class="text-decoration-none text-danger fw-bold">
+                  free demo
+                </a>
+                or
+                <a href="#" class="text-decoration-none text-danger fw-bold">
+                  Contact Sales
+                </a>
+                .
+              </p>
+            </div>
+            <!-- right aligment image 1st -->
+            <div class="col-lg-5 mt-lg-0 mt-2 text-center">
+              <img
+                src="./Assets/Images/featour-1st-img.png"
+                alt="img"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- banner-area-2nd -->
+    <main class="my-5">
+      <section>
+        <div class="container">
+          <p class="h2 fw-bold">Core Modules (21)</p>
+          <!-----------------------------3columns================================================================-->
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-4">
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-center text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/book.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Courses and Batches </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/people (1).png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Human Resources </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/clipboard.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Student Attendance </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/timetable.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Timetable </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/test.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Gradebook </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/message-on-phone.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> SMS Integration </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/name.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> ID Card Generator </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!----2nd column========================================================-->
+            <div class="col-lg-4">
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-center text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/book.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Certificate Generator </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/people (1).png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Multiple Dashboard </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/clipboard.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Student Admission </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/timetable.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> News Management </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/test.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Examination </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/message-on-phone.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> School / Events Calender </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/name.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Finance </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-------------3rd-colum===============================================-->
+            <div class="col-lg-4">
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-center text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/book.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Student Information </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/people (1).png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Employee / Teacher Login </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/clipboard.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Students / Parents Login </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/timetable.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Messaging System </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/test.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> User Management </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/message-on-phone.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Report Center </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/name.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Custom Student Marks </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- banner-area-3rd -->
+    <main class="my-5">
+      <section>
+        <div class="container">
+          <p class="h2 fw-bold">Standard Modules (17)</p>
+          <!-----------------------------3columns================================================================-->
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-4">
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-center text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/book.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Hostel / Dormitory </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/people (1).png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Data Management </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/clipboard.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Custom Import </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/timetable.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Custom Report </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/test.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Gallery </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/message-on-phone.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Discussion </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!----2nd column========================================================-->
+            <div class="col-lg-4">
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-center text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/book.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Instant Fees </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/people (1).png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Email Integration </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/clipboard.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Blog </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/timetable.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Theme </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/test.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Task </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/message-on-phone.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Discipline </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-------------3rd-colum===============================================-->
+            <div class="col-lg-4">
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-center text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/book.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Library </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/people (1).png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Transportation </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/clipboard.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Poll </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/timetable.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Placement </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/test.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Inventory </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- banner-area-4th -->
+    <main class="my-5">
+      <section>
+        <div class="container">
+          <p class="h2 fw-bold">Premium Modules (10)</p>
+          <!-----------------------------3columns================================================================-->
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-4">
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-center text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/book.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Data Export </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/people (1).png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Student Assignment Management </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/clipboard.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Form Builder </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/timetable.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Enquiry Registration </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!----2nd column========================================================-->
+            <div class="col-lg-4">
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-center text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/book.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Tally Integration </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/people (1).png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Fees Import </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/clipboard.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Reminder </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-------------3rd-colum===============================================-->
+            <div class="col-lg-4">
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-center text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/book.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Payment Gateway integrations </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/people (1).png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Google SSO </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/clipboard.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> APP Frame </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- banner-area-5th -->
+    <main class="my-5">
+      <section>
+        <div class="container">
+          <p class="h2 fw-bold">Premium Modules (12)</p>
+          <!-----------------------------3columns================================================================-->
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-4">
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-center text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/book.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Alumini </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/people (1).png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Doc Manager </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/clipboard.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Gate Management </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/timetable.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> QuickBooks Integration </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!----2nd column========================================================-->
+            <div class="col-lg-4">
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-center text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/book.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Audit </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/people (1).png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Automatic Timetable Generator </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/clipboard.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Google Docs </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/timetable.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Google Meet Integration </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-------------3rd-colum===============================================-->
+            <div class="col-lg-4">
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-center text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/book.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Azure Integration </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/people (1).png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Paybooks Integration </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/clipboard.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Online Examination </span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark lead"
+                    style="font-size: 17px"
+                  >
+                    <img
+                      src="./Assets/Images/timetable.png"
+                      alt=""
+                      style="height: 35px"
+                    />
+                    <span class="ms-3"> Bigbluebutton Integration </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- banner-area-6th addon apps-->
+    <main class="my-5">
+      <section class="pt-5 pb-5 bg-light">
+        <div class="container">
+          <p class="text-center h3 fw-bold">Addon Apps</p>
+          <div class="row justify-content-center align-items-center mt-5">
+            <!-- 1st fedena app -->
+            <div class="col-lg-4 text-lg-start text-center">
+              <a href="#" class="text-decoration-none text-dark h5 fw-bold">
+                <img src="./Assets/Images/sms.png" alt="img" />
+                <span class="ms-3"> Fedena Mobile App </span>
+              </a>
+              <p class="text-muted mt-3">
+                iOS & Android apps in your brand for parents, teachers &
+                students
+              </p>
+              <a
+                href="#"
+                type="button"
+                class="text-decoration-none text-danger h5 fw-bold"
+              >
+                Learn More
+              </a>
+            </div>
+            <!-- 1st fedena app -->
+            <div class="col-lg-4 text-lg-start text-center mt-lg-0 mt-4">
+              <a href="#" class="text-decoration-none text-dark h5 fw-bold">
+                <img src="./Assets/Images/sms.png" alt="img" />
+                <span class="ms-3"> Fedena Multi-School ERP System </span>
+              </a>
+              <p class="text-muted mt-3">
+                One dashboard to manage and track all your institutions
+              </p>
+              <a
+                href="#"
+                type="button"
+                class="text-decoration-none text-danger h5 fw-bold"
+              >
+                Learn More
+              </a>
+            </div>
+            <!-- 1st fedena app -->
+            <div class="col-lg-4 text-lg-start text-center mt-4">
+              <a href="#" class="text-decoration-none text-dark h5 fw-bold">
+                <img src="./Assets/Images/sms.png" alt="img" />
+                <span class="ms-3"> Fedena Integration </span>
+              </a>
+              <p class="text-muted mt-3">
+                Integrate various web-based services with Fedena
+              </p>
+              <a
+                href="#"
+                type="button"
+                class="text-decoration-none text-danger h5 fw-bold"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- banner-area-7th-->
+    <main>
+      <section class="my-5">
+        <div class="container">
+          <div class="row justify-content-evenly align-items-center">
+            <!-- bg-violet=====================================-->
+            <div
+              class="col-md-5 rounded-4 pt-4 ps-lg-5 pb-3 mb-lg-0 mb-4"
+              style="background: center #d1edff"
+            >
+              <strong class="text-dark h2 fw-bold"> Resell Fedena </strong>
+              <p class="text-muted mt-2">
+                Embed Fedena in your application and sell it in your market,
+                under your terms and pricing.
+              </p>
+              <button
+                type="button"
+                class="border2 rounded-1 mt-lg-0 mt-2"
+                style="
+                  padding: 5px 13px;
+                  background-color: transparent;
+                  border: 1px solid #cc3122;
+                "
+              >
+                <a href="#" class="text-decoration-none h6 text-danger fw-bold">
+                  Partner
+                </a>
+              </button>
+            </div>
+            <!-- bg-violet=====================================-->
+            <div
+              class="col-md-5 rounded-4 pt-4 ps-lg-5 pb-3"
+              style="background: center #d1edff"
+            >
+              <strong class="text-dark h2 fw-bold"> Buy Fedena </strong>
+              <p class="text-muted mt-2">
+                All our plans include unlimited students, unlimited courses,
+                priority support with no hidden fee.
+              </p>
+              <button
+                type="button"
+                class="border2 rounded-1 mt-lg-0 mt-2"
+                style="
+                  padding: 5px 13px;
+                  background-color: transparent;
+                  border: 1px solid #cc3122;
+                "
+              >
+                <a href="#" class="text-decoration-none h6 text-danger fw-bold">
+                  Plan and pricing
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main-section 8th for efficient and effective school erp with display flex -->
+    <main>
+      <section class="bg-violet pt-5 pb-5">
+        <div class="container">
+          <div
+            class="d-flex justify-content-center align-items-center flex-column"
+            data-aos-delay="200"
+            data-aos="fade-up"
+          >
+            <strong class="h1 fw-bold text-white text-center">
+              Efficient and Effective School ERP Software
+            </strong>
+            <p class="h6 col-lg-6 text-white text-center mt-3">
+              Suitable for all types of institutes such as K12, Universities,
+              Higher-Ed, Training Institutes and more.
+            </p>
+            <br />
+            <div class="d-flex justify-content-evenly align-items-center">
+              <div class="btn-section ms-lg-3 ms-0 text-center">
+                <!-- btn-1====================== -->
+                <button
+                  type="button"
+                  class="border2 rounded-1 mt-lg-0 mt-2"
+                  style="padding: 10px 20px"
+                >
+                  <a href="#" class="text-decoration-none h5"> Book A Demo </a>
+                </button>
+                <!-- btn-2====================== -->
+                <button
+                  type="button"
+                  class="border2 rounded-1 mt-lg-0 mt-2 ms-lg-3 ms-0"
+                  style="
+                    padding: 10px 13px;
+                    background-color: transparent;
+                    border: 1px solid #cc3122;
+                  "
+                >
+                  <a
+                    href="#"
+                    class="text-decoration-none h5 text-danger fw-bold FAQ"
+                  >
+                    Frequently Asked Questions
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main-section 9th for footer-->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <!----------logo====================================-->
+          <div class="col-lg-1 col-md-1 mb-lg-5 pb-lg-5">
+            <a href="#" class="logo">
+              <img src="./Assets/Images/logo.webp" alt="" style="width: 75px" />
+            </a>
+          </div>
+          <!----------------------product=========================================-->
+          <div class="col-lg-3 col-md-6 mt-5">
+            <ul class="list-unstyled">
+              <li>
+                <p class="text-muted h6 fw-bold">Product</p>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg"
+                  >Features Tour</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg"
+                  >Fedena Learn</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg"
+                  >Features Tour</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg"
+                  >Mobile App</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg"
+                  >Multi School</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg"
+                  >Student Information System</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg"
+                  >Integration</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg"
+                  >Partner Program</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!----------------------Why Fedena=========================================-->
+          <div class="col-lg-3 col-md-6 mb-lg-4 mb-0">
+            <ul class="list-unstyled">
+              <li>
+                <p class="text-muted h6 fw-bold">Why Fedena?</p>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg"
+                  >101 Reasons</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg"
+                  >Fedena Differences</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg"
+                  >Custom ERP</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg"
+                  >Why School Management Software</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg"
+                  >Multi School</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg"
+                  >Our Customers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!----------------------Help=========================================-->
+          <div class="col-lg-2 col-md-6 mb-lg-5 mb-0">
+            <ul class="list-unstyled">
+              <li>
+                <p class="text-muted h6 fw-bold">Help</p>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg fs-6"
+                  >Contact us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg fs-6"
+                  >Support</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg fs-6"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg fs-6"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark lh-lg fs-6"
+                  >API Playground</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-----Foradian-technologies==============================================-->
+          <div class="col-lg-3 col-md-6 mt-lg-5 mt-0">
+            <p class="text-muted">
+              Foradian Technologies, #2569/665, J K Landmark, 27th Main Rd,
+              Sector 1, HSR Layout, Bengaluru, Karnataka - 560102.
+            </p>
+            <ul class="list-unstyled">
+              <li class="text-dark fw-bold lh-lg">
+                Contact us @
+                <br />
+                <a href="#" class="text-decoration-none text-dark fw-bold">
+                  +91- 8047 0918 07
+                </a>
+              </li>
+              <li class="text-dark fw-bold lh-lg">
+                Download App
+                <br />
+                <a href="#">
+                  <img
+                    src="./Assets/Images/apple-app-store-logo.jpg"
+                    alt=""
+                    style="width: 120px"
+                  />
+                </a>
+                <br />
+                <a href="#">
+                  <img
+                    src="./Assets/Images/download.png"
+                    alt=""
+                    style="width: 130px"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-------------copyright section===========================================================-->
+        <div class="row justify-content-between align-items-center mt-5">
+          <div class="col-lg-6 col-md-12">
+            <p class="text-muted text-lg-start text-center">
+              &#169; 2023 Foradian Technologies. All Rights Reserved.
+              <a href="#" class="text-dark text-decoration-none"> Terms </a>
+              &
+              <a href="#" class="text-dark text-decoration-none"> Privacy </a>
+            </p>
+          </div>
+          <!-------------social contact=====================================================-->
+          <div class="col-lg-6 col-md-12">
+            <ul class="list-unstyled d-flex justify-content-center">
+              <li style="margin-right: 20px">
+                <a href="#" class="text-decoration-none text-dark">
+                  <img
+                    src="./Assets/Images/facebook (1).png"
+                    alt=""
+                    style="width: 30px"
+                  />
+                </a>
+              </li>
+              <li style="margin-right: 20px">
+                <a href="#" class="text-decoration-none text-dark">
+                  <img
+                    src="./Assets/Images/twitter-sign.png"
+                    alt=""
+                    style="width: 30px"
+                  />
+                </a>
+              </li>
+              <li style="margin-right: 20px">
+                <a href="#" class="text-decoration-none text-dark">
+                  <img
+                    src="./Assets/Images/linkedin.png"
+                    alt=""
+                    style="width: 30px"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark">
+                  <img
+                    src="./Assets/Images/youtube-logo.png"
+                    alt=""
+                    style="width: 30px"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- js files cdn====================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Javascript/animation javascript/jquery.min.js"></script>
+    <script src="./Javascript/animation javascript/owl.carousel.min.js"></script>
+    <script src="./Javascript/My.js"></script>
+  </body>
+</html>
